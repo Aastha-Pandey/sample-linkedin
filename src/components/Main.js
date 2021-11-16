@@ -17,6 +17,17 @@ const Main = () => {
         <div className='flex flex-col h-full w-1/4  space-y-4'>
           <SideList />
           <SideFooter />
+          <div className='flex justify-between'>
+            {' '}
+            <div className=' flex text-xs font-semibold text-gray-900'>
+              Linked
+              <img
+                className='h-4'
+                src='https://cdn-icons-png.flaticon.com/512/174/174857.png'
+              ></img>
+            </div>
+            <div className='text-xs font-medium text-gray-400'>LinkedIn 2021</div>
+          </div>
         </div>
       </div>
     </>

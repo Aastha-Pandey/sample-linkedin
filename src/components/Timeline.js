@@ -31,8 +31,8 @@ const Timeline = () => {
               </>
             ))}
           </div>
-          <button className='flex space-x-2 items-center text-blue-600 w-60 font-semibold text-xs text-left'>
-            <button> See all 358 employees on LinkedIn</button>
+          <button className='flex space-x-2 items-center text-blue-600 w-60 text-xs text-left'>
+            <button className='font-semibold'> See all 358 employees on LinkedIn</button>
             {rightArrowIcon}
           </button>
           <span className='flex space-x-2 pt-4'>

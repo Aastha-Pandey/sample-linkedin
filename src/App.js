@@ -6,7 +6,7 @@ import { homeIcon, usersIcon, briefCaseIcon, userIcon } from './../src/svg';
 
 function App() {
   const tabNames = {
-    ' Home': homeIcon,
+    Home: homeIcon,
     'My network': usersIcon,
     'Job offers': briefCaseIcon,
     'My profile': userIcon,

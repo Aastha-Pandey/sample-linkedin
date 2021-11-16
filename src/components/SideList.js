@@ -1,15 +1,47 @@
 import { eyeIcon } from '../svg';
 
-const list = [
-  'InVision',
-  'Sketch',
-  'Dribbble',
-  'BeHance',
-  'Overlap studio',
-  'Medium',
-  'Adobe',
-  'slack',
-];
+const list = {
+  InVision: (
+    <div class='flex justify-center items-center font-semibold rounded-full bg-red-400 h-10 w-10 text-white'>
+      I
+    </div>
+  ),
+  Sketch: (
+    <div class=' flex justify-center items-center font-semibold rounded-full bg-green-400 h-10 w-10 text-white'>
+      S
+    </div>
+  ),
+  Dribbble: (
+    <div class=' flex justify-center items-center font-semibold rounded-full bg-blue-400 h-10 w-10 text-white'>
+      D
+    </div>
+  ),
+  BeHance: (
+    <div class=' flex justify-center items-center font-semibold rounded-full bg-yellow-400 h-10 w-10 text-white'>
+      B
+    </div>
+  ),
+  'Overlap studio': (
+    <div class='flex justify-center items-center font-semibold  rounded-full bg-purple-400 text-white h-10 w-10'>
+      O
+    </div>
+  ),
+  Medium: (
+    <div class='flex justify-center items-center font-semibold  rounded-full bg-indigo-800 h-10 w-10 text-white'>
+      M
+    </div>
+  ),
+  Adobe: (
+    <div class='flex justify-center items-center font-semibold  rounded-full bg-pink-700 h-10 w-10 text-white'>
+      A
+    </div>
+  ),
+  Slack: (
+    <div class='flex justify-center items-center font-semibold  rounded-full bg-red-800 h-10 w-10 text-white'>
+      S
+    </div>
+  ),
+};
 
 const SideList = () => {
   return (
@@ -18,9 +50,9 @@ const SideList = () => {
         <h1 className='text-left pl-5 text-sm font-semibold text-gray-800'>
           Pages people also viewed
         </h1>
-        {list.map((name) => (
+        {Object.keys(list).map((name) => (
           <button className='justify-around items-center flex text-sm text-left font-semibold text-gray-700'>
-            <div class='rounded-full bg-red-400 h-10 w-10'></div>
+            {list[name]}
 
             <div className='flex flex-col w-36 '>
               {name}
