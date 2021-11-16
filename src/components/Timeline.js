@@ -36,11 +36,11 @@ const Timeline = () => {
             {rightArrowIcon}
           </button>
           <span className='flex space-x-2 pt-4'>
-            <button className='flex space-x-2 items-center bg-blue-700 text-blue-50 font-semibold text-xs rounded-sm text-left py-2 px-4'>
+            <button className='flex space-x-2 items-center bg-blue-600 text-blue-50 font-semibold text-xs rounded-sm text-left py-2 px-4'>
               {eyeIcon}
               <button>Follow</button>
             </button>
-            <button className='space-x-2 flex items-center text-gray-700 border w-auto border-blue-800 rounded-sm font-semibold text-xs text-left  py-2 px-4'>
+            <button className='space-x-2 flex items-center text-gray-700 border w-auto border-blue-600 rounded-sm font-semibold text-xs text-left  py-2 px-4'>
               {rightArrowIcon}
               <button>Visit website</button>
             </button>
