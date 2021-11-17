@@ -11,13 +11,17 @@ const SideList = () => {
         {Object.keys(sideList).map((name) => (
           <button className='justify-around items-center flex text-sm text-left font-semibold text-gray-700'>
             <div
-              class={`flex justify-center items-center font-semibold rounded-full ${sideList[name]} h-10 w-10 text-white`}
+              class={`flex justify-center items-center font-semibold rounded-full ${sideList[name].profileImage} h-10 w-10 text-white`}
             >
               {name.slice(0, 1)}
             </div>
-            <div className='flex flex-col w-36 '>
+            <div className='flex flex-col w-48'>
               {name}
-              <div className='text-xs text-gray-500'>Internet</div>
+              <div className='flex flex-wrap space-x-2 justify-start'>
+                <div className='text-xs text-gray-500'>{sideList[name].domain} .</div>
+
+                <div className='text-xs text-gray-500'>{sideList[name].followers} followers</div>
+              </div>
             </div>
 
             <div className='text-blue-700'>{eyeIcon}</div>

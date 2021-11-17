@@ -20,14 +20,46 @@ export const sideFooterList = [
 ];
 
 export const sideList = {
-  InVision: 'bg-red-400',
-  Sketch: 'bg-green-400',
-  Dribbble: 'bg-blue-400',
-  BeHance: 'bg-yellow-400',
-  'Overlap studio': 'bg-purple-400',
-  Medium: 'bg-indigo-800',
-  Adobe: 'bg-pink-700',
-  Slack: 'bg-red-800',
+  InVision: {
+    profileImage: 'bg-red-400',
+    domain: 'Internet',
+    followers: '137k',
+  },
+  Sketch: {
+    profileImage: 'bg-green-400',
+    domain: 'Design',
+    followers: '137M',
+  },
+  Dribbble: {
+    profileImage: 'bg-blue-400',
+    domain: 'Design',
+    followers: '137k',
+  },
+  BeHance: {
+    profileImage: 'bg-yellow-400',
+    domain: 'Internet',
+    followers: '280M',
+  },
+  'Overlap studio': {
+    profileImage: 'bg-purple-400',
+    domain: 'Information technology and services',
+    followers: '137k',
+  },
+  Medium: {
+    profileImage: 'bg-indigo-400',
+    domain: 'online media',
+    followers: '447k',
+  },
+  Adobe: {
+    profileImage: 'bg-pink-700',
+    domain: 'Computer software',
+    followers: '117M',
+  },
+  Slack: {
+    profileImage: 'bg-red-800',
+    domain: 'Computer software',
+    followers: '137k',
+  },
 };
 
 export const userData = {
