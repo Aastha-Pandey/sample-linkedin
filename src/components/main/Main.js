@@ -26,7 +26,7 @@ const Main = () => {
                 src='https://cdn-icons-png.flaticon.com/512/174/174857.png'
               ></img>
             </div>
-            <div className='text-xs font-medium text-gray-400'>LinkedIn 2021</div>
+            <div className='text-xs font-medium text-gray-400'>LinkedIn © 2021</div>
           </div>
         </div>
       </div>
