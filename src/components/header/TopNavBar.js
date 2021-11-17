@@ -1,6 +1,9 @@
+import { useContext } from 'react';
+import { userContext } from '../../App';
 import { gridIcon, messageIcon, notificationIcon, searchIcon } from '../../svg';
 
 const TopNavBar = () => {
+  const { user } = useContext(userContext);
   return (
     <>
       <nav className='bg-blue-500 h-16 flex space-x-4 justify-center'>
@@ -22,11 +25,7 @@ const TopNavBar = () => {
           {notificationIcon}
           {messageIcon}
 
-          <img
-            className='object-cover  h-8  rounded-md '
-            src='https://images.unsplash.com/photo-1568822617270-2c1579f8dfe2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80'
-            alt='code'
-          />
+          <img className='object-cover  h-8  rounded-md ' src={user.profileImage} alt='code' />
           {gridIcon}
           <button className='bg-yellow-400 h-8 text-blue-900 font-semibold text-sm py-2 px-4 rounded'>
             Upgrade to premium

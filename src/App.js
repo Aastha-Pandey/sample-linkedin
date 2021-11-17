@@ -1,21 +1,21 @@
 import 'tailwindcss/tailwind.css';
 import TopNavBar from './components/header/TopNavBar';
 import MidNavBar from './components/header/MidNavBar';
-import Main from './components/Main';
-import { homeIcon, usersIcon, briefCaseIcon, userIcon } from './../src/svg';
+import Main from './components/main/Main';
+import { createContext, useState } from 'react';
+import { midTabNames, userData } from './constants';
+
+export const userContext = createContext();
 
 function App() {
-  const tabNames = {
-    Home: homeIcon,
-    'My network': usersIcon,
-    'Job offers': briefCaseIcon,
-    'My profile': userIcon,
-  };
+  const [user] = useState(userData);
   return (
     <>
-      <TopNavBar />
-      <MidNavBar tabNames={tabNames} size={4} />
-      <Main />
+      <userContext.Provider value={{ user }}>
+        <TopNavBar />
+        <MidNavBar tabNames={midTabNames} />
+        <Main />
+      </userContext.Provider>
     </>
   );
 }

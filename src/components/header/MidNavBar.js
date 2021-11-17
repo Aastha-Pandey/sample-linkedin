@@ -1,8 +1,14 @@
-const MidNavBar = ({ tabNames, size }) => {
+const MidNavBar = ({ tabNames }) => {
   return (
     <>
       <nav
-        className={`bg-white grid grid-cols-${size} divide-x divide-gray-300 h-12 justify-around py-2`}
+        className={
+          Array.isArray(tabNames)
+            ? `bg-white grid grid-cols-${tabNames.length} divide-x divide-gray-300 h-12 justify-around py-2`
+            : `bg-white grid grid-cols-${
+                Object.keys(tabNames).length
+              } divide-x divide-gray-300 h-12 justify-around py-2`
+        }
       >
         {Array.isArray(tabNames) ? (
           <>
