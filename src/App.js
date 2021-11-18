@@ -1,4 +1,3 @@
-import 'tailwindcss/tailwind.css';
 import TopNavBar from './components/header/TopNavBar';
 import MidNavBar from './components/header/MidNavBar';
 import Main from './components/main/Main';
