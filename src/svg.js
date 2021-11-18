@@ -1,7 +1,7 @@
 export const notificationIcon = (
   <svg
     xmlns='http://www.w3.org/2000/svg'
-    className='h-5 w-5 stroke-current text-blue-50'
+    className='h-8 w-8 md:h-5 md:w-5 lg:h-5 lg:w-5 stroke-current text-blue-50'
     viewBox='0 0 20 20'
     fill='currentColor'
   >
@@ -12,7 +12,7 @@ export const notificationIcon = (
 export const messageIcon = (
   <svg
     xmlns='http://www.w3.org/2000/svg'
-    className='h-5 w-5 stroke-current text-blue-50'
+    className='h-8 w-8 md:h-5 md:w-5 lg:h-5 lg:w-5 stroke-current text-blue-50'
     viewBox='0 0 20 20'
     fill='currentColor'
   >
@@ -27,7 +27,7 @@ export const messageIcon = (
 export const gridIcon = (
   <svg
     xmlns='http://www.w3.org/2000/svg'
-    className='h-5 w-5 stroke-current text-blue-50'
+    className='h-8 w-8 md:h-5 md:w-5 lg:h-5 lg:w-5 stroke-current text-blue-50'
     viewBox='0 0 20 20'
     fill='currentColor'
   >
@@ -55,7 +55,7 @@ export const searchIcon = (
 export const homeIcon = (
   <svg
     xmlns='http://www.w3.org/2000/svg'
-    className='h-6 w-6 stroke-current text-gray-500'
+    className='h-4 w-4 md:h-6 md:w-6 lg:h-6 lg:w-6 stroke-current text-gray-500'
     fill='none'
     viewBox='0 0 24 24'
     stroke='currentColor'
@@ -72,7 +72,7 @@ export const homeIcon = (
 export const usersIcon = (
   <svg
     xmlns='http://www.w3.org/2000/svg'
-    className='h-6 w-6 stroke-current text-gray-500'
+    className='h-4 w-4 md:h-6 md:w-6 lg:h-6 lg:w-6 stroke-current text-gray-500'
     fill='none'
     viewBox='0 0 24 24'
     stroke='currentColor'
@@ -89,7 +89,7 @@ export const usersIcon = (
 export const userIcon = (
   <svg
     xmlns='http://www.w3.org/2000/svg'
-    className='h-6 w-6 stroke-current text-gray-500'
+    className='h-4 w-4 md:h-6 md:w-6 lg:h-6 lg:w-6 stroke-current text-gray-500'
     fill='none'
     viewBox='0 0 24 24'
     stroke='currentColor'
@@ -106,7 +106,7 @@ export const userIcon = (
 export const briefCaseIcon = (
   <svg
     xmlns='http://www.w3.org/2000/svg'
-    className='h-6 w-6 stroke-current text-gray-500'
+    className='h-4 w-4 md:h-6 md:w-6 lg:h-6 lg:w-6 stroke-current text-gray-500'
     fill='none'
     viewBox='0 0 24 24'
     stroke='currentColor'

@@ -16,8 +16,8 @@ const MidNavBar = ({ tabNames }) => {
               <button
                 className={
                   i === 0
-                    ? 'font-bold text-xs mx-4 border border-green-500 border-r-0 border-l-0 border-t-0 text-green-500'
-                    : 'font-bold text-xs  text-gray-500'
+                    ? 'flex justify-center items-center font-semibold  text-xs md:font-bold lg:font-bold mx-1 md:mx-4 lg:mx-4 border border-green-500 border-r-0 border-l-0 border-t-0 text-green-500'
+                    : 'flex justify-center items-center font-semibold md:font-bold lg:font-bold text-xs text-gray-500'
                 }
               >
                 {tab}
@@ -29,9 +29,11 @@ const MidNavBar = ({ tabNames }) => {
             {' '}
             {Object.keys(tabNames).map((tab) => (
               <>
-                <button className='flex justify-center items-center space-x-4'>
+                <button className='flex justify-center items-center space-x-2 md:space-x-4 lg:space-x-4'>
                   {tabNames[tab]}
-                  <button className='font-bold text-xs  text-gray-500'>{tab}</button>
+                  <button className='font-semibold md:font-bold lg:font-bold text-xs  text-gray-500'>
+                    {tab}
+                  </button>
                 </button>
               </>
             ))}

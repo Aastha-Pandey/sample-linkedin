@@ -6,7 +6,7 @@ const TopNavBar = () => {
   const { user } = useContext(userContext);
   return (
     <>
-      <nav className='bg-blue-500 h-16 flex space-x-4 justify-center'>
+      <nav className='bg-blue-500 h-16 flex space-x-1 md:space-x-4 lg:space-x-4 justify-center'>
         <span className='flex  items-center space-x-2  w-7/12'>
           <img
             className='bg-blue-50 rounded-sm h-8'
@@ -21,13 +21,13 @@ const TopNavBar = () => {
             />
           </span>
         </span>
-        <span className='flex items-center space-x-4'>
+        <span className='flex items-center space-x-2 md:space-x-4 lg:space-x-4'>
           {notificationIcon}
           {messageIcon}
 
           <img className='object-cover  h-8  rounded-md ' src={user.profileImage} alt='code' />
           {gridIcon}
-          <button className='bg-yellow-400 h-8 text-blue-900 font-semibold text-sm py-2 px-4 rounded'>
+          <button className='bg-yellow-400 flex items-center text-xs h-8 w-auto text-blue-900 font-bold md:font-semibold lg:font-semibold md:text-sm lg:text-sm py-2 px-4 rounded'>
             Upgrade to premium
           </button>
         </span>
