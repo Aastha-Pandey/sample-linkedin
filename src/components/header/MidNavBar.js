@@ -29,8 +29,8 @@ const MidNavBar = ({ tabNames }) => {
             {' '}
             {Object.keys(tabNames).map((tab) => (
               <>
-                <button className='flex justify-center items-center space-x-2 md:space-x-4 lg:space-x-4'>
-                  {tabNames[tab]}
+                <button className='flex  px-5 md:px-0 lg:px-0 justify-center items-center space-x-2 md:space-x-4 lg:space-x-4'>
+                  <div>{tabNames[tab]}</div>
                   <button className='font-semibold md:font-bold lg:font-bold text-xs  text-gray-500'>
                     {tab}
                   </button>

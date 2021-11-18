@@ -4,7 +4,7 @@ import { eyeIcon } from './../../svg';
 const SideList = () => {
   return (
     <>
-      <div className='flex flex-col space-y-4 bg-white p-4 w-full rounded-md'>
+      <div className='flex flex-col space-y-4  bg-white p-4 w-full rounded-md'>
         <h1 className='text-left pl-5 text-sm font-semibold text-gray-800'>
           Pages people also viewed
         </h1>

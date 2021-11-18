@@ -6,7 +6,7 @@ const TopNavBar = () => {
   const { user } = useContext(userContext);
   return (
     <>
-      <nav className='bg-blue-500 h-16 flex space-x-1 md:space-x-4 lg:space-x-4 justify-center'>
+      <nav className='bg-blue-500 h-16 px-5 md:px-0 lg:px-0 flex space-x-1 md:space-x-4 lg:space-x-4 justify-center'>
         <span className='flex  items-center space-x-2  w-7/12'>
           <img
             className='bg-blue-50 rounded-sm h-8'
